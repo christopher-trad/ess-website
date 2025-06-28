@@ -1,0 +1,34 @@
+.navigationbar ul{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+.navigationbar a{
+    color:#00f7ff;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    text-align: center;
+}
+.navigationbar li{
+    float: right;
+}
+.navigationbar a:hover{
+    color: black;
+}
+.navigationbar{
+  backdrop-filter: blur(10px);           /* the blurry effect */
+  -webkit-backdrop-filter: blur(10px);   /* for Safari */
+
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* subtle shadow */
+  color: #222;
+}
+body {
+  background: linear-gradient(135deg, #f9faff, #d0f0ff);
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
