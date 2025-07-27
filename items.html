@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://kit.fontawesome.com/633beffd8f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
+    <link rel="icon" href="images/1c050f7a-8a81-4831-88ca-79f2ca779131_removalai_preview.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
     <title>ESS Items</title>
 </head>
 <body>
+    <style>body{
+        background-color: rgb(225, 244, 225);
+    }
+    </style>
         <header>
         <nav class="navigationbar">
+            <img src="images/1c050f7a-8a81-4831-88ca-79f2ca779131_removalai_preview.png" width="200px" height="150px">
+            <div class="search-wrraper">
+            <label for="search-wrraper">Search</label>
+            <input type="text" id="search" data-search>
+            </div>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="items.html">Items</a></li>
@@ -16,6 +31,55 @@
             </ul>
         </nav>
     </header>
-    
+    <main>
+        <div class="user-cards" user-cards-container></div>
+
+        <template data-user-template>
+            <div class="card" >
+            <img class="img" data-img height="100px" width="100px">
+            <div class="title-card" data-title></div>
+            <div class="price" data-price></div>
+            </div>
+        </template>
+    </main>
+ <footer>
+      <div class="footerup">
+<div class="info">
+  <h2>Our Location</h2>
+  <iframe 
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13487.508139205092!2d35.58021014696198!3d33.87666734524548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151f3dbdefc166e5%3A0x4223471b0b508dd5!2sAin%20Saadeh%2C%20Lebanon!5e0!3m2!1sen!2sus!4v1687929818429!5m2!1sen!2sus" 
+  width="450" 
+  height="450" 
+  style="border:0;" 
+  allowfullscreen="" 
+  loading="lazy" 
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+</div>
+<div class="info">
+  <h2>Opening Hours</h2>
+  <p>8am to 9pm</p>
+</div>
+<div class="info">
+  <h2>Contact Us</h2>
+  <p>+961 70 967 861</p>
+  <p>ess.company11@gmail.com</p>
+</div>
+<div class="info">
+  <div class="social-icons">
+  <h2>Our Socials</h2>
+  <a href="https://facebook.com" class="social facebook" target="_blank">
+    <i class="fa-brands fa-facebook"></i>
+  </a>
+  <a href="https://instagram.com" class="social instagram" target="_blank">
+    <i class="fa-brands fa-instagram"></i>
+  </a>
+  </div>
+</div>
+</div>
+<div class="footerdown">
+<p class="arr">© 2025 ESS, All rights reserved</p>
+</div>
+</footer>   
 </body>
 </html>

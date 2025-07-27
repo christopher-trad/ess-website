@@ -1,0 +1,12 @@
+[
+  {
+    "name": "LED Bulb",
+    "price": "4$",
+    "image": "images/slide1.jpg"
+  },
+  {
+    "name": "Extension Cord",
+    "price": "12$",
+    "image": "images/slide2.jpg"
+  }
+]
