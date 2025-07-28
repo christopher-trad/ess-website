@@ -12,6 +12,27 @@
     text-decoration: none;
     font-size: 1.1rem;
      color: #2ecc71;
+     transition: all 0.3s ease;
+}
+.navigationbar a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background-color: #bfff00; /* lime underline */
+  transition: width 0.3s ease-in-out;
+}
+
+.navigationbar a:hover {
+  color: #bfff00;
+  text-shadow: 0 0 8px #bfff00, 0 0 12px #bfff00;
+  transform: scale(1.03);
+}
+
+.navigationbar a:hover::after {
+  width: 100%;
 }
 .navigationbar li{
     float: right;
@@ -115,6 +136,17 @@ footer{
 .location iframe{
     margin: 20px;
 }
+@media (max-width: 600px) {
+  .title{
+    font-size: 2rem;
+  }
+  label{
+    display: hide;
+  }
+  input{
+    font-size: 0.7rem;
+  }
+}
 footer h2{
     color:white;
     font-size: 1.5rem;
@@ -141,7 +173,8 @@ footer p{
   justify-content: center;
 }
 .social.facebook,
-.social.instagram {
+.social.instagram,
+.social.dubbizle {
     margin: 10px;
   text-decoration: none;
   width: 60px;
@@ -162,7 +195,8 @@ footer p{
 
 /* Hover animation base */
 .social.facebook::before,
-.social.instagram::before {
+.social.instagram::before,
+ .social.dubbizle::before{
   content: "";
   position: absolute;
   width: 200%;
@@ -198,6 +232,17 @@ footer p{
   color: white;
   border-color: transparent;
 }
+/* dubbizle styles */
+.social.dubbizle::before {
+  background: radial-gradient(circle at 30% 30%, #ff0000, #e1ff00, #000000);
+}
+.social.dubbizle:hover::before {
+  transform: scale(1);
+}
+.social.dubbizle:hover {
+  color: white;
+  border-color: transparent;
+}
 input{
     font-size: 1.3rem;
     border-radius: 16px;
@@ -223,4 +268,36 @@ input{
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
     background-color: transparent;
+}
+@media (max-width: 768px) {
+  .nav-items li{
+    width: 30px;
+    height: auto;
+    margin: 10px;
+    padding: 5px;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  input{
+    width: 150px;
+  }
+  .navigationbar .text-nav {
+    display: none; /* Hide text on phone */
+  }
+}
+
+/* Keep the active page link glowing and underlined */
+.navigationbar a.active {
+  color: #bfff00;
+  text-shadow: 0 0 8px #bfff00, 0 0 12px #bfff00;
+}
+
+.navigationbar a.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #bfff00;
 }
