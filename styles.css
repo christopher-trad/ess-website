@@ -272,16 +272,20 @@ input{
   .nav-items li{
     width: 30px;
     height: auto;
-    margin: 10px;
+    margin: 5px;
     padding: 5px;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
   input{
     width: 150px;
   }
   .navigationbar .text-nav {
     display: none; /* Hide text on phone */
+  }
+  .navigationbar img{
+    height: 150px;
+    width: 150px;
   }
 }
 
@@ -299,3 +303,4 @@ input{
   height: 2px;
   width: 100%;
 }
+
