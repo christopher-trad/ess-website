@@ -253,21 +253,12 @@ input{
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     gap: 2.5rem;
     margin-top: 1rem;
+    padding: 1rem;
 }
 .hide{
     display: none;
 }
-.card{
-    text-align: center;
-    color: black;
-    background: linear-gradient(135deg,rgba(255, 255, 255, 0));
-    backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(3px);
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    border-radius: 12px;
-    background-color: transparent;
-}
+
 @media (max-width: 768px) {
   .nav-items li{
     width: 30px;
@@ -287,12 +278,16 @@ input{
     height: 150px;
     width: 150px;
   }
+  .category-buttons button {
+    padding: 8px 17px;
+    font-size: 8px;
+}
 }
 
 /* Keep the active page link glowing and underlined */
 .navigationbar a.active {
   color: #bfff00;
-  text-shadow: 0 0 8px #bfff00, 0 0 12px #bfff00;
+  text-shadow: 0 0 8px #bfff00, 0 0 10px #bfff00;
 }
 
 .navigationbar a.active::after {
@@ -303,4 +298,129 @@ input{
   height: 2px;
   width: 100%;
 }
+.category-buttons button {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  user-select: none;
+  position: relative;
+  outline: none;
+  margin-right: 10px;
+}
 
+/* Assign colors based on data-category attribute */
+.category-buttons button[data-category="all"] {
+  background: #6c757d; /* gray for 'all' */
+  color: #fff;
+}
+.category-buttons button[data-category="lamps"],
+.category-buttons button[data-category="machines"] {
+  background: #28a745; /* green */
+}
+.category-buttons button[data-category="breakers"],
+.category-buttons button[data-category="wires"] {
+  background: #ffc107; /* yellow */
+  color: #222;
+}
+
+/* Hover effect */
+.category-buttons button:hover {
+  filter: brightness(1.15);
+  box-shadow:
+    0 0 10px 3px rgba(255, 255, 0, 0.6),
+    0 4px 15px rgba(0, 0, 0, 0.25);
+  transform: scale(1.08);
+  z-index: 1;
+}
+
+/* Active effect */
+.category-buttons button.active {
+  animation: glowPulse 2s infinite;
+  box-shadow:
+    0 0 15px 5px rgba(255, 255, 0, 0.8),
+    inset 0 0 10px rgba(255, 255, 255, 0.6);
+  transform: scale(1.1);
+  filter: brightness(1.3);
+  z-index: 2;
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    box-shadow:
+      0 0 15px 5px rgba(255, 255, 0, 0.8),
+      inset 0 0 10px rgba(255, 255, 255, 0.6);
+  }
+  50% {
+    box-shadow:
+      0 0 25px 10px rgba(255, 255, 0, 1),
+      inset 0 0 15px rgba(255, 255, 255, 0.8);
+  }
+}
+/* Card base style */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 10px;
+  margin: 15px;
+  width: 150px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeSlideUp 0.5s forwards;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Hover effect */
+.card:hover {
+  transform: scale(1.05);
+  box-shadow:
+    0 8px 20px rgba(40, 167, 69, 0.4),
+    0 0 10px rgba(40, 167, 69, 0.3);
+}
+
+/* Image style */
+.card img {
+  width: 150px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  object-fit: cover;
+  height: 150px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover img {
+  transform: scale(1.08);
+}
+
+/* Title */
+.title-card {
+  font-size: 20px;
+  margin: 0 0 10px;
+  color: #222;
+}
+
+/* Price */
+.card p {
+  font-size: 18px;
+  font-weight: 700;
+  color: #10471d;
+  margin: 0;
+}
+
+/* Fade & slide up animation */
+@keyframes fadeSlideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
