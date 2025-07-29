@@ -320,6 +320,7 @@ input{
 .category-buttons button[data-category="all"] {
   background: #6c757d; /* gray for 'all' */
   color: #fff;
+  margin-left: 10px;
 }
 .category-buttons button[data-category="lamps"],
 .category-buttons button[data-category="machines"] {
