@@ -1,28 +1,263 @@
 [
   {
     "id":"1",
-    "name": "LED Bulb",
-    "price": "4$",
-    "image": "images/slide3.jpg",
+    "name": "LED Bulb 12W",
+    "price": "2$",
+    "image": "images/light-bulb12W.png",
     "category": "lamps",
     "description": "A bright energy-efficient LED lamp.",
     "specs": [
-      "Wattage: 10W",
-      "Color: White",
+      "Wattage: 12W",
+      "Color: yellow/White",
       "Voltage: 220V"
     ]
   },
   {
-    "id":"2",
-    "name": "Extension Cord",
-    "price": "12$",
-    "image": "images/slide2.jpg",
-    "category": "wires",
-    "description": "A fast and durable wire.",
+      "id":"2",
+    "name": "LED Bulb 15W",
+    "price": "3$",
+    "image": "images/light-bulb15W.png",
+    "category": "lamps",
+    "description": "A bright energy-efficient LED lamp.",
     "specs": [
-      "Wattage: 10W",
-      "speed: 0.1ms",
+      "Wattage: 15W",
+      "Color: yellow/White",
       "Voltage: 220V"
+    ]
+  },
+    {
+      "id":"3",
+    "name": "LED Bulb 30W",
+    "price": "5$",
+    "image": "images/light-bulb30w.png",
+    "category": "lamps",
+    "description": "A bright energy-efficient LED lamp.",
+    "specs": [
+      "Wattage: 30W",
+      "Color: yellow/White",
+      "Voltage: 220V"
+    ]
+  },
+    {
+      "id":"4",
+    "name": "LED Bulb 50W",
+    "price": "8$",
+    "image": "images/light-bulb50w.png",
+    "category": "lamps",
+    "description": "A bright energy-efficient LED lamp.",
+    "specs": [
+      "Wattage: 50W",
+      "Color: yellow/White",
+      "Voltage: 220V"
+    ]
+  },
+      {
+      "id":"6",
+    "name": "Auxilier",
+    "price": "4$",
+    "image": "images/auxylier.png",
+    "category": "breakers",
+    "description": "",
+    "specs": [
+      "NC-NO"
+    ]
+  },
+      {
+      "id":"7",
+    "name": "Breaker 6A",
+    "price": "$",
+    "image": "images/Acti9-iC60H-1P-6-A-C-schneider-circuit-breaker-600x600-removebg-preview.png",
+    "category": "breakers",
+    "description": "C6",
+    "specs": [
+     "mono C6"
+    ]
+  },
+        {
+      "id":"8",
+    "name": "Breaker 16A",
+    "price": "$",
+    "image": "images/Acti9-iC60H-1P-16-A-C-schneider-circuit-breaker-600x600-removebg-preview.png",
+    "category": "breakers",
+    "description": "C16",
+    "specs": [
+     "mono C16"
+    ]
+  },
+          {
+      "id":"9",
+    "name": "Breaker 20A",
+    "price": "$",
+    "image": "images/Acti9-iC60H-1P-20-A-C-schneider-circuit-breaker-600x600-removebg-preview.png",
+    "category": "breakers",
+    "description": "C20",
+    "specs": [
+     "mono C20"
+    ]
+  },
+          {
+      "id":"10",
+    "name": "Breaker 25A",
+    "price": "$",
+    "image": "images/Acti9-iC60H-1P-25-A-C-schneider-circuit-breaker-600x600-removebg-preview.png",
+    "category": "breakers",
+    "description": "C25",
+    "specs": [
+     "mono C25"
+    ]
+  },
+          {
+      "id":"11",
+    "name": "Breaker 32A",
+    "price": "$",
+    "image": "images/Acti9-iC60H-1P-32-A-C-schneider-circuit-breaker-600x600-removebg-preview.png",
+    "category": "breakers",
+    "description": "C32",
+    "specs": [
+     "mono C32"
+    ]
+  },
+          {
+      "id":"12",
+    "name": "Breaker 40A",
+    "price": "$",
+    "image": "images/Acti9-iC60H-1P-40-A-C-schneider-circuit-breaker-600x600-removebg-preview.png",
+    "category": "breakers",
+    "description": "C40",
+    "specs": [
+     "mono C40"
+    ]
+  },
+          {
+      "id":"13",
+    "name": "Breaker 50A",
+    "price": "$",
+    "image": "images/Acti9-iC60H-1P-50-A-C-schneider-circuit-breaker-600x600-removebg-preview.png",
+    "category": "breakers",
+    "description": "C50",
+    "specs": [
+     "mono C50"
+    ]
+  },
+          {
+      "id":"14",
+    "name": "Breaker 63A",
+    "price": "$",
+    "image": "images/Acti9-iC60H-1P-63-A-C-schneider-circuit-breaker-600x600-removebg-preview.png",
+    "category": "breakers",
+    "description": "C63",
+    "specs": [
+     "mono C63"
+    ]
+  },
+          {
+      "id":"15",
+    "name": "Breaker 2-phase  6A",
+    "price": "$",
+    "image": "images/Acti9-iC60H-2P-6-A-C-schneider-circuit-breaker-600x600-removebg-preview.png",
+    "category": "breakers",
+    "description": "C6",
+    "specs": [
+     "2-phase C6"
+    ]
+  },
+          {
+      "id":"16",
+    "name": "Breaker 2-phase 10A",
+    "price": "$",
+    "image": "images/Acti9-iC60H-2P-10-A-C-schneider-circuit-breaker-600x600-removebg-preview.png",
+    "category": "breakers",
+    "description": "C10",
+    "specs": [
+     "2-phase C10"
+    ]
+  },
+          {
+      "id":"17",
+    "name": "Breaker 2-phase 16A",
+    "price": "$",
+    "image": "images/Acti9-iC60H-2P-16-A-C-schneider-circuit-breaker-600x600-removebg-preview.png",
+    "category": "breakers",
+    "description": "C16",
+    "specs": [
+     "2-phase C16"
+    ]
+  },
+          {
+      "id":"18",
+    "name": "Breaker 2-phase 25A",
+    "price": "$",
+    "image": "images/Acti9-iC60H-2P-25-A-C-schneider-circuit-breaker-600x600-removebg-preview.png",
+    "category": "breakers",
+    "description": "C25",
+    "specs": [
+     "2-phase C25"
+    ]
+  },
+          {
+      "id":"19",
+    "name": "Breaker 2-phase 32A",
+    "price": "$",
+    "image": "images/Acti9-iC60H-2P-32-A-schneider-circuit-breaker-600x600-removebg-preview.png",
+    "category": "breakers",
+    "description": "C32",
+    "specs": [
+     "2-phase C32"
+    ]
+  },
+          {
+      "id":"20",
+    "name": "Breaker 2-phase 40A",
+    "price": "$",
+    "image": "images/Acti9-iC60H-2P-40-A-C-schneider-circuit-breaker-600x600-removebg-preview.png",
+    "category": "breakers",
+    "description": "C40",
+    "specs": [
+     "2-phase C40"
+    ]
+  },
+          {
+      "id":"21",
+    "name": "Breaker 2-phase 50A",
+    "price": "$",
+    "image": "images/Acti9-iC60H-2P-50-A-schneider-circuit-breaker-600x600-removebg-preview.png",
+    "category": "breakers",
+    "description": "C50",
+    "specs": [
+     "2-phase C50"
+    ]
+  },
+          {
+      "id":"22",
+    "name": "Breaker 2-phase 63A",
+    "price": "$",
+    "image": "images/Acti9-iC60H-2P-63-A-C-schneider-circuit-breaker-600x600-removebg-preview.png",
+    "category": "breakers",
+    "description": "C63",
+    "specs": [
+     "2-phase C63"
+    ]
+  },
+          {
+      "id":"23",
+    "name": "protection 3-phase",
+    "price": "$",
+    "image":"images/protection-3phase.png",
+    "category": "breakers",
+    "description": "3 phase protection",
+    "specs": [
+     ""
+    ]
+  },
+          {
+      "id":"24",
+    "name": "protection mono",
+    "price": "$",
+    "image": "images/protection-monophase.png",
+    "category": "breakers",
+    "description": "protection monophase",
+    "specs": [
+     "mono protection"
     ]
   }
 ]

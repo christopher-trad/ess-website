@@ -15,7 +15,7 @@ fetch("data.json")
     // Fill content
     document.getElementById("title").textContent = item.name;
     document.getElementById("main-image").src = item.image;
-    document.getElementById("price").textContent = "💰 " + item.price;
+    document.getElementById("price").textContent = "price: " + item.price;
     document.getElementById("description").textContent = item.description || "No description.";
 
     const specsList = document.getElementById("specs");
