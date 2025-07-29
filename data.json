@@ -1,14 +1,28 @@
 [
   {
+    "id":"1",
     "name": "LED Bulb",
     "price": "4$",
     "image": "images/slide3.jpg",
-    "category": "lamps"
+    "category": "lamps",
+    "description": "A bright energy-efficient LED lamp.",
+    "specs": [
+      "Wattage: 10W",
+      "Color: White",
+      "Voltage: 220V"
+    ]
   },
   {
+    "id":"2",
     "name": "Extension Cord",
     "price": "12$",
     "image": "images/slide2.jpg",
-    "category": "wires"
+    "category": "wires",
+    "description": "A fast and durable wire.",
+    "specs": [
+      "Wattage: 10W",
+      "speed: 0.1ms",
+      "Voltage: 220V"
+    ]
   }
 ]

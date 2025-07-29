@@ -18,6 +18,9 @@ fetch("data.json")
       image.src = user.image;
       title.textContent = user.name;
       price.textContent = user.price;
+      card.addEventListener("click", () => {
+        window.location.href = `item.html?id=${user.id}`;
+      });
       UserCardcontainer.append(card)
       return {
         name: user.name.toLowerCase(),    // lowercase for case-insensitive search
