@@ -528,7 +528,7 @@ input{
   box-shadow: 0 0 5px #2e8b57;
 }
 .main-category-btn[data-category="solar products"] {
-  background-color: #b8860b; /* dark yellow */
+  background-color: #fff200; /* dark yellow */
   box-shadow: 0 0 5px #b8860b;
 }
 .main-category-btn[data-category="cctv/security system"] {
@@ -536,27 +536,16 @@ input{
   box-shadow: 0 0 5px #1e90ff;
 }
 .main-category-btn[data-category="home appliances"] {
-  background-color: #8a2be2; /* purple */
+  background-color: #303030; /* purple */
   box-shadow: 0 0 5px #8a2be2;
 }
 .main-category-btn[data-category="special offers"] {
   background-color: #ff4500; /* red */
   box-shadow: 0 0 5px #ff4500;
-}
-
-/* ACTIVE GLOW */
-.main-category-btn.active[data-category="electrical"] {
-  box-shadow: 0 0 15px 5px #2e8b57;
-}
-.main-category-btn.active[data-category="solar products"] {
-  box-shadow: 0 0 15px 5px #b8860b;
-}
-.main-category-btn.active[data-category="cctv/security system"] {
-  box-shadow: 0 0 15px 5px #1e90ff;
-}
-.main-category-btn.active[data-category="home appliances"] {
-  box-shadow: 0 0 15px 5px #8a2be2;
-}
-.main-category-btn.active[data-category="special offers"] {
-  box-shadow: 0 0 15px 5px #ff4500;
+    box-shadow:
+    0 0 15px 5px rgba(255, 0, 0, 0.8),
+    inset 0 0 10px rgba(255, 255, 255, 0.6);
+  transform: scale(1.1);
+  filter: brightness(1);
+  z-index: 2;
 }
