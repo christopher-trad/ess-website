@@ -60,6 +60,7 @@
     "name": "Auxilier",
     "price": "4$",
     "image": "images/auxylier.png",
+    "mainCategory": "electrical",
     "category": "breakers",
     "description": "",
     "specs": [
@@ -71,6 +72,7 @@
     "name": "Breaker 6A",
     "price": "$",
     "image": "images/Acti9-iC60H-1P-6-A-C-schneider-circuit-breaker-600x600-removebg-preview.png",
+    "mainCategory": "electrical",
     "category": "breakers",
     "description": "C6",
     "specs": [
@@ -82,6 +84,7 @@
     "name": "Breaker 16A",
     "price": "$",
     "image": "images/Acti9-iC60H-1P-16-A-C-schneider-circuit-breaker-600x600-removebg-preview.png",
+    "mainCategory": "electrical",
     "category": "breakers",
     "description": "C16",
     "specs": [
@@ -93,6 +96,7 @@
     "name": "Breaker 20A",
     "price": "$",
     "image": "images/Acti9-iC60H-1P-20-A-C-schneider-circuit-breaker-600x600-removebg-preview.png",
+    "mainCategory": "electrical",
     "category": "breakers",
     "description": "C20",
     "specs": [
@@ -104,6 +108,7 @@
     "name": "Breaker 25A",
     "price": "$",
     "image": "images/Acti9-iC60H-1P-25-A-C-schneider-circuit-breaker-600x600-removebg-preview.png",
+    "mainCategory": "electrical",
     "category": "breakers",
     "description": "C25",
     "specs": [
@@ -115,6 +120,7 @@
     "name": "Breaker 32A",
     "price": "$",
     "image": "images/Acti9-iC60H-1P-32-A-C-schneider-circuit-breaker-600x600-removebg-preview.png",
+    "mainCategory": "electrical",
     "category": "breakers",
     "description": "C32",
     "specs": [
@@ -126,6 +132,7 @@
     "name": "Breaker 40A",
     "price": "$",
     "image": "images/Acti9-iC60H-1P-40-A-C-schneider-circuit-breaker-600x600-removebg-preview.png",
+    "mainCategory": "electrical",
     "category": "breakers",
     "description": "C40",
     "specs": [
@@ -137,6 +144,7 @@
     "name": "Breaker 50A",
     "price": "$",
     "image": "images/Acti9-iC60H-1P-50-A-C-schneider-circuit-breaker-600x600-removebg-preview.png",
+    "mainCategory": "electrical",
     "category": "breakers",
     "description": "C50",
     "specs": [
@@ -148,6 +156,7 @@
     "name": "Breaker 63A",
     "price": "$",
     "image": "images/Acti9-iC60H-1P-63-A-C-schneider-circuit-breaker-600x600-removebg-preview.png",
+    "mainCategory": "electrical",
     "category": "breakers",
     "description": "C63",
     "specs": [
@@ -159,6 +168,7 @@
     "name": "Breaker 2-phase  6A",
     "price": "$",
     "image": "images/Acti9-iC60H-2P-6-A-C-schneider-circuit-breaker-600x600-removebg-preview.png",
+    "mainCategory": "electrical",
     "category": "breakers",
     "description": "C6",
     "specs": [
@@ -170,6 +180,7 @@
     "name": "Breaker 2-phase 10A",
     "price": "$",
     "image": "images/Acti9-iC60H-2P-10-A-C-schneider-circuit-breaker-600x600-removebg-preview.png",
+    "mainCategory": "electrical",
     "category": "breakers",
     "description": "C10",
     "specs": [
@@ -181,6 +192,7 @@
     "name": "Breaker 2-phase 16A",
     "price": "$",
     "image": "images/Acti9-iC60H-2P-16-A-C-schneider-circuit-breaker-600x600-removebg-preview.png",
+    "mainCategory": "electrical",
     "category": "breakers",
     "description": "C16",
     "specs": [
@@ -192,6 +204,7 @@
     "name": "Breaker 2-phase 25A",
     "price": "$",
     "image": "images/Acti9-iC60H-2P-25-A-C-schneider-circuit-breaker-600x600-removebg-preview.png",
+    "mainCategory": "electrical",
     "category": "breakers",
     "description": "C25",
     "specs": [
@@ -203,6 +216,7 @@
     "name": "Breaker 2-phase 32A",
     "price": "$",
     "image": "images/Acti9-iC60H-2P-32-A-schneider-circuit-breaker-600x600-removebg-preview.png",
+    "mainCategory": "electrical",
     "category": "breakers",
     "description": "C32",
     "specs": [
@@ -214,6 +228,7 @@
     "name": "Breaker 2-phase 40A",
     "price": "$",
     "image": "images/Acti9-iC60H-2P-40-A-C-schneider-circuit-breaker-600x600-removebg-preview.png",
+    "mainCategory": "electrical",
     "category": "breakers",
     "description": "C40",
     "specs": [
@@ -225,6 +240,7 @@
     "name": "Breaker 2-phase 50A",
     "price": "$",
     "image": "images/Acti9-iC60H-2P-50-A-schneider-circuit-breaker-600x600-removebg-preview.png",
+    "mainCategory": "electrical",
     "category": "breakers",
     "description": "C50",
     "specs": [
@@ -236,6 +252,7 @@
     "name": "Breaker 2-phase 63A",
     "price": "$",
     "image": "images/Acti9-iC60H-2P-63-A-C-schneider-circuit-breaker-600x600-removebg-preview.png",
+    "mainCategory": "electrical",
     "category": "breakers",
     "description": "C63",
     "specs": [
@@ -247,6 +264,7 @@
     "name": "protection 3-phase",
     "price": "$",
     "image":"images/protection-3phase.png",
+    "mainCategory": "electrical",
     "category": "breakers",
     "description": "3 phase protection",
     "specs": [
@@ -258,6 +276,7 @@
     "name": "protection mono",
     "price": "$",
     "image": "images/protection-monophase.png",
+    "mainCategory": "electrical",
     "category": "breakers",
     "description": "protection monophase",
     "specs": [
