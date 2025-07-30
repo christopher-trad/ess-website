@@ -1,12 +1,11 @@
 const UserCardTemplate = document.querySelector("[data-user-template]");
 const UserCardcontainer = document.querySelector("[user-cards-container]");
 const searchInput = document.querySelector("[data-search]");
-const categoryButtons = document.querySelectorAll("[data-category]");
 
 let users = [];
 let currentCategory = "all";
 
-// Fetch and render user cards from JSON
+// Fetch and render user cards (your original code)
 fetch("data.json")
   .then(res => res.json())
   .then(data => {
@@ -21,9 +20,9 @@ fetch("data.json")
       card.addEventListener("click", () => {
         window.location.href = `item.html?id=${user.id}`;
       });
-      UserCardcontainer.append(card)
+      UserCardcontainer.append(card);
       return {
-        name: user.name.toLowerCase(),    // lowercase for case-insensitive search
+        name: user.name.toLowerCase(),
         image: user.image,
         price: user.price,
         category: user.category,
@@ -32,37 +31,58 @@ fetch("data.json")
     });
   });
 
-// Unified filter function: filters by search term and category
+// Filter and display function
 function filterAndDisplay() {
   const searchTerm = searchInput.value.trim().toLowerCase();
 
   users.forEach(user => {
     const matchesSearch = user.name.includes(searchTerm);
+
+    // Here we check category equality
+    // If user.category equals currentCategory, show it.
+    // So "electrical" main category only matches if item.category === "electrical"
+    // Otherwise you can customize this logic if you want to match subcategories under a main category
     const matchesCategory = currentCategory === "all" || user.category === currentCategory;
+
+
     const visible = matchesSearch && matchesCategory;
     user.element.classList.toggle("hide", !visible);
   });
 }
 
 // Search input event listener
-searchInput.addEventListener("input", () => {
-  filterAndDisplay();
-});
+searchInput.addEventListener("input", filterAndDisplay);
 
-// Category buttons event listeners
-categoryButtons.forEach(button => {
-  button.addEventListener("click", () => {
-    currentCategory = button.getAttribute("data-category");
+// Click main category button (same as before)
+document.querySelectorAll(".main-category-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    currentCategory = btn.getAttribute("data-category");
+
+    // Clear all active buttons
+    document.querySelectorAll(".category-buttons button").forEach(b => b.classList.remove("active"));
+
+    // Activate clicked main button
+    btn.classList.add("active");
+
     filterAndDisplay();
-
-    // Toggle active class on buttons
-    categoryButtons.forEach(btn => btn.classList.remove("active"));
-    button.classList.add("active");
   });
 });
-users = data.map((user, index) => {
-  const card = UserCardTemplate.content.cloneNode(true).children[0];
-  card.classList.add('card');
-  card.style.animationDelay = `${index * 100}ms`;
-  // rest of your code
+
+// Click dropdown subcategory
+document.querySelectorAll(".dropdown-item").forEach(item => {
+  item.addEventListener("click", (e) => {
+    e.stopPropagation();
+
+    currentCategory = item.getAttribute("data-category");
+
+    // Remove active from all main buttons
+    document.querySelectorAll(".category-buttons button").forEach(b => b.classList.remove("active"));
+
+    // Activate parent main button
+    const parentDropdown = item.closest(".category-dropdown");
+    const mainBtn = parentDropdown.querySelector(".main-category-btn");
+    mainBtn.classList.add("active");
+
+    filterAndDisplay();
+  });
 });

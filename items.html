@@ -35,13 +35,65 @@
     </header>
     <main>
       <div class="category-buttons">
-  <button data-category="all">All</button>
-  <button data-category="lamps">Lamps</button>
-  <button data-category="breakers">Breakers</button>
-  <button data-category="wires">Wires</button>
-  <button data-category="machines">Machines</button>
-</div>
 
+    <div class="category-dropdown">
+      <button data-category="electrical" class="main-category-btn">Electrical</button>
+      <div class="dropdown-menu">
+        <div data-category="electrical" class="dropdown-item">Electrical (All)</div>
+        <div data-category="led lights" class="dropdown-item">LED Lights</div>
+        <div data-category="breakers" class="dropdown-item">Breakers</div>
+        <div data-category="contacters and relay" class="dropdown-item">Contacters and Relay</div>
+        <div data-category="plugs and switches" class="dropdown-item">Plugs and Switches</div>
+        <div data-category="main boards" class="dropdown-item">Main Boards</div>
+        <div data-category="wires" class="dropdown-item">Wires</div>
+        <div data-category="others" class="dropdown-item">Others</div>
+      </div>
+    </div>
+
+    <div class="category-dropdown">
+      <button data-category="solar products" class="main-category-btn">Solar Products</button>
+      <div class="dropdown-menu">
+        <div data-category="solar products" class="dropdown-item">Solar Products (All)</div>
+        <div data-category="solar panels" class="dropdown-item">Solar Panels</div>
+        <div data-category="inverters" class="dropdown-item">Inverters</div>
+        <div data-category="batteries" class="dropdown-item">Batteries</div>
+        <div data-category="ac/dc board" class="dropdown-item">AC/DC Board</div>
+        <div data-category="accessories-solar" class="dropdown-item">Accessories</div>
+      </div>
+    </div>
+
+    <div class="category-dropdown">
+      <button data-category="cctv/security system" class="main-category-btn">CCTV / Security System</button>
+      <div class="dropdown-menu">
+        <div data-category="cctv/security system" class="dropdown-item">CCTV / Security System (All)</div>
+        <div data-category="cameras" class="dropdown-item">Cameras</div>
+        <div data-category="nvrs" class="dropdown-item">NVRs</div>
+        <div data-category="hdds" class="dropdown-item">HDDs</div>
+        <div data-category="alarm system" class="dropdown-item">Alarm System</div>
+        <div data-category="accessories-security" class="dropdown-item">Accessories</div>
+      </div>
+    </div>
+
+    <div class="category-dropdown">
+      <button data-category="home appliances" class="main-category-btn">Home Appliances</button>
+      <div class="dropdown-menu">
+        <div data-category="home appliances" class="dropdown-item">Home Appliances (All)</div>
+        <div data-category="accs" class="dropdown-item">ACCS</div>
+        <div data-category="heaters" class="dropdown-item">Heaters</div>
+        <div data-category="kitchen appliances" class="dropdown-item">Kitchen Appliances</div>
+        <div data-category="fans" class="dropdown-item">Fans</div>
+      </div>
+    </div>
+
+    <div class="category-dropdown">
+      <button data-category="special offers" class="main-category-btn">Special Offers!</button>
+      <div class="dropdown-menu">
+        <div data-category="special offers" class="dropdown-item">Special Offers! (All)</div>
+        <div data-category="special offers" class="dropdown-item">New offers every Monday</div>
+      </div>
+    </div>
+
+  </div>
         <div class="user-cards" user-cards-container></div>
 
         <template data-user-template>
@@ -118,5 +170,10 @@
   }
 }
 </style>
+<a href="https://wa.me/96170967861" target="_blank" class="whatsapp-support" aria-label="Chat on WhatsApp">
+  <span class="icon"><i class="fa-brands fa-whatsapp"></i></span>
+  <span class="text">For Support</span>
+</a>
+
 </body>
 </html>

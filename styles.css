@@ -315,23 +315,6 @@ input{
   outline: none;
   margin-right: 10px;
 }
-
-/* Assign colors based on data-category attribute */
-.category-buttons button[data-category="all"] {
-  background: #6c757d; /* gray for 'all' */
-  color: #fff;
-  margin-left: 10px;
-}
-.category-buttons button[data-category="lamps"],
-.category-buttons button[data-category="machines"] {
-  background: #28a745; /* green */
-}
-.category-buttons button[data-category="breakers"],
-.category-buttons button[data-category="wires"] {
-  background: #ffc107; /* yellow */
-  color: #222;
-}
-
 /* Hover effect */
 .category-buttons button:hover {
   filter: brightness(1.15);
@@ -424,4 +407,156 @@ input{
     opacity: 1;
     transform: translateY(0);
   }
+}
+.whatsapp-support {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 50px;
+  padding: 12px 18px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-decoration: none;
+  box-shadow: 0 0 15px rgba(37, 211, 102, 0.7);
+  z-index: 999;
+  animation: pulse 2s infinite;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.whatsapp-support .text {
+  font-size: 1.5rem; 
+  max-width: 0;
+  opacity: 0;
+  transition: max-width 0.4s ease, opacity 0.4s ease;
+}
+
+.whatsapp-support:hover {
+  border-radius: 50px;
+  padding: 12px 24px;
+  animation: none;
+  box-shadow: 0 0 20px 5px rgba(37, 211, 102, 0.9);
+}
+
+.whatsapp-support:hover .text {
+  max-width: 150px;
+  opacity: 1;
+}
+
+.whatsapp-support .icon i {
+  font-size: 40px;
+  animation: icon-glow 2s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 5px rgba(37, 211, 102, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(37, 211, 102, 1);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(37, 211, 102, 0.6);
+  }
+}
+
+@keyframes icon-glow {
+  0%, 100% {
+    text-shadow: 0 0 5px white;
+  }
+  50% {
+    text-shadow: 0 0 15px #fff, 0 0 25px #25D366;
+  }
+}
+.category-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%; /* right below main button */
+  left: 0;
+  background: #222; /* dark bg */
+  border-radius: 8px;
+  padding: 8px 0;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+  min-width: 220px;
+  z-index: 10;
+}
+
+.dropdown-menu .dropdown-item {
+  padding: 10px 20px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #444;
+}
+
+/* Show dropdown on hover of container */
+.category-dropdown:hover .dropdown-menu {
+  display: block;
+}
+.main-category-btn {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  margin: 0.5rem;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+/* COLORS AND BASE GLOW */
+.main-category-btn[data-category="electrical"] {
+  background-color: #2e8b57; /* green */
+  box-shadow: 0 0 5px #2e8b57;
+}
+.main-category-btn[data-category="solar products"] {
+  background-color: #b8860b; /* dark yellow */
+  box-shadow: 0 0 5px #b8860b;
+}
+.main-category-btn[data-category="cctv/security system"] {
+  background-color: #1e90ff; /* blue */
+  box-shadow: 0 0 5px #1e90ff;
+}
+.main-category-btn[data-category="home appliances"] {
+  background-color: #8a2be2; /* purple */
+  box-shadow: 0 0 5px #8a2be2;
+}
+.main-category-btn[data-category="special offers"] {
+  background-color: #ff4500; /* red */
+  box-shadow: 0 0 5px #ff4500;
+}
+
+/* ACTIVE GLOW */
+.main-category-btn.active[data-category="electrical"] {
+  box-shadow: 0 0 15px 5px #2e8b57;
+}
+.main-category-btn.active[data-category="solar products"] {
+  box-shadow: 0 0 15px 5px #b8860b;
+}
+.main-category-btn.active[data-category="cctv/security system"] {
+  box-shadow: 0 0 15px 5px #1e90ff;
+}
+.main-category-btn.active[data-category="home appliances"] {
+  box-shadow: 0 0 15px 5px #8a2be2;
+}
+.main-category-btn.active[data-category="special offers"] {
+  box-shadow: 0 0 15px 5px #ff4500;
 }

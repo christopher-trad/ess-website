@@ -4,7 +4,7 @@
     "name": "LED Bulb 12W",
     "price": "2$",
     "image": "images/light-bulb12W.png",
-    "category": "lamps",
+    "category": ["led lights","electrical"],
     "description": "A bright energy-efficient LED lamp.",
     "specs": [
       "Wattage: 12W",
@@ -17,7 +17,7 @@
     "name": "LED Bulb 15W",
     "price": "3$",
     "image": "images/light-bulb15W.png",
-    "category": "lamps",
+    "category": "led lights",
     "description": "A bright energy-efficient LED lamp.",
     "specs": [
       "Wattage: 15W",
@@ -30,7 +30,7 @@
     "name": "LED Bulb 30W",
     "price": "5$",
     "image": "images/light-bulb30w.png",
-    "category": "lamps",
+    "category": "led lights",
     "description": "A bright energy-efficient LED lamp.",
     "specs": [
       "Wattage: 30W",
@@ -43,7 +43,7 @@
     "name": "LED Bulb 50W",
     "price": "8$",
     "image": "images/light-bulb50w.png",
-    "category": "lamps",
+    "category": "led lights",
     "description": "A bright energy-efficient LED lamp.",
     "specs": [
       "Wattage: 50W",
