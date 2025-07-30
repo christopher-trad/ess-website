@@ -70,3 +70,12 @@ document.querySelectorAll(".dropdown-item").forEach(item => {
     filterAndDisplay();
   });
 });
+const scrollIcon = document.getElementById("scrollUpIcon");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      scrollIcon.style.display = "block";
+    } else {
+      scrollIcon.style.display = "none";
+    }
+  });

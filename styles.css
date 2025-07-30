@@ -549,3 +549,38 @@ input{
   filter: brightness(1);
   z-index: 2;
 }
+.scroll-icon {
+  position: fixed;
+  bottom: 80px; /* Adjust to not overlap WhatsApp */
+  right: 20px;
+  z-index: 999;
+  background-color: #ff4d4d; /* red like offers */
+  color: white;
+  font-size: 12px;
+  padding: 22px;
+  border-radius: 50%;
+  box-shadow: 0 0 12px #ff4d4d;
+  display: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.scroll-icon:hover {
+  background-color: #da0000; /* darker red */
+  box-shadow: 0 0 16px #e60000;
+}
+@keyframes glowPulse {
+  0% { box-shadow: 0 0 10px #ff4d4d; }
+  50% { box-shadow: 0 0 20px #ff1a1a; }
+  100% { box-shadow: 0 0 10px #ff3434; }
+}
+
+.scroll-icon {
+  animation: glowPulse 2s ease-in-out;
+}
+html {
+  scroll-behavior: smooth;
+}
