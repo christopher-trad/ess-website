@@ -1,33 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/633beffd8f.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
-    <link rel="icon" href="images/1c050f7a-8a81-4831-88ca-79f2ca779131_removalai_preview.png">
+    <link rel="icon" href="images/logo1.jpg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
     <title>ESS Items</title>
 </head>
 <body>
-    <style>body{
-        background-color: rgb(225, 244, 225);
-    }
-    </style>
         <header id="header">
         <nav class="navigationbar">
-            <img src="images/1c050f7a-8a81-4831-88ca-79f2ca779131_removalai_preview.png" alt="logo-ess" width="200px" height="150px">
+            <img src="images/logo1.jpg" alt="logo-ess" width="150px" height="150px">
             <div class="search-wrraper">
-            <label for="search-wrraper">Search</label>
+            <label for="search-wrraper" class="search-label">Search</label>
             <input type="text" id="search" data-search>
             </div>
             <div class="nav-items">
             <ul>
                 <li><a href="index.html" aria-label="home"><i class="fa-solid fa-house"></i><span class="text-nav">Home</span></a></li>
-                <li><a href="items.html" aria-label="Items" class="active"><i class="fa-solid fa-bolt"></i><span class="text-nav">Items</span></a></li>
+                <li><a href="items.html" aria-label="Items" class="active"><i class="fas fa-spray-can"></i><span class="text-nav">Items</span></a></li>
                 <li><a href="contact-us.html" aria-label="contact Us"><i class="fa-solid fa-phone"></i><span class="text-nav">Contact Us</span></a></li>
             </ul>
           </div>
@@ -37,51 +36,46 @@
       <div class="category-buttons">
 
     <div class="category-dropdown">
-      <button data-category="electrical" class="main-category-btn">Electrical</button>
+      <button data-category="electrical" class="main-category-btn">Summer</button>
       <div class="dropdown-menu">
-        <div data-category="electrical" class="dropdown-item">Electrical (All)</div>
-        <div data-category="led lights" class="dropdown-item">LED Lights</div>
-        <div data-category="breakers" class="dropdown-item">Breakers</div>
-        <div data-category="contacters and relay" class="dropdown-item">Contacters and Relay</div>
-        <div data-category="plugs and switches" class="dropdown-item">Plugs and Switches</div>
-        <div data-category="main boards" class="dropdown-item">Main Boards</div>
-        <div data-category="wires" class="dropdown-item">Wires</div>
-        <div data-category="others" class="dropdown-item">Others</div>
+        <div data-category="electrical" class="dropdown-item">1</div>
+        <div data-category="led lights" class="dropdown-item">2</div>
+        <div data-category="breakers" class="dropdown-item">3</div>
+        <div data-category="contacters and relay" class="dropdown-item">4</div>
+        <div data-category="plugs and switches" class="dropdown-item">5</div>
       </div>
     </div>
 
     <div class="category-dropdown">
-      <button data-category="solar products" class="main-category-btn">Solar Products</button>
+      <button data-category="solar products" class="main-category-btn">Winter</button>
       <div class="dropdown-menu">
-        <div data-category="solar products" class="dropdown-item">Solar Products (All)</div>
-        <div data-category="solar panels" class="dropdown-item">Solar Panels</div>
-        <div data-category="inverters" class="dropdown-item">Inverters</div>
-        <div data-category="batteries" class="dropdown-item">Batteries</div>
-        <div data-category="ac/dc board" class="dropdown-item">AC/DC Board</div>
-        <div data-category="accessories-solar" class="dropdown-item">Accessories</div>
+        <div data-category="solar products" class="dropdown-item">1</div>
+        <div data-category="solar panels" class="dropdown-item">2</div>
+        <div data-category="inverters" class="dropdown-item">3</div>
+        <div data-category="batteries" class="dropdown-item">4</div>
+        <div data-category="ac/dc board" class="dropdown-item">5</div>
       </div>
     </div>
 
     <div class="category-dropdown">
-      <button data-category="cctv/security system" class="main-category-btn">CCTV / Security System</button>
+      <button data-category="cctv/security system" class="main-category-btn">Spring</button>
       <div class="dropdown-menu">
-        <div data-category="cctv/security system" class="dropdown-item">CCTV / Security System (All)</div>
-        <div data-category="cameras" class="dropdown-item">Cameras</div>
-        <div data-category="nvrs" class="dropdown-item">NVRs</div>
-        <div data-category="hdds" class="dropdown-item">HDDs</div>
-        <div data-category="alarm system" class="dropdown-item">Alarm System</div>
-        <div data-category="accessories-security" class="dropdown-item">Accessories</div>
+        <div data-category="cctv/security system" class="dropdown-item">1</div>
+        <div data-category="cameras" class="dropdown-item">2</div>
+        <div data-category="nvrs" class="dropdown-item">3</div>
+        <div data-category="hdds" class="dropdown-item">4</div>
+        <div data-category="alarm system" class="dropdown-item">5</div>
       </div>
     </div>
 
     <div class="category-dropdown">
-      <button data-category="home appliances" class="main-category-btn">Home Appliances</button>
+      <button data-category="home appliances" class="main-category-btn">Autumn</button>
       <div class="dropdown-menu">
-        <div data-category="home appliances" class="dropdown-item">Home Appliances (All)</div>
-        <div data-category="accs" class="dropdown-item">ACCS</div>
-        <div data-category="heaters" class="dropdown-item">Heaters</div>
-        <div data-category="kitchen appliances" class="dropdown-item">Kitchen Appliances</div>
-        <div data-category="fans" class="dropdown-item">Fans</div>
+        <div data-category="home appliances" class="dropdown-item">1</div>
+        <div data-category="accs" class="dropdown-item">2</div>
+        <div data-category="heaters" class="dropdown-item">3</div>
+        <div data-category="kitchen appliances" class="dropdown-item">4</div>
+        <div data-category="fans" class="dropdown-item">5</div>
       </div>
     </div>
 
@@ -110,7 +104,7 @@
   <h2>Our Location</h2>
   <iframe 
   title="location"
-  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13487.508139205092!2d35.58021014696198!3d33.87666734524548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151f3dbdefc166e5%3A0x4223471b0b508dd5!2sAin%20Saadeh%2C%20Lebanon!5e0!3m2!1sen!2sus!4v1687929818429!5m2!1sen!2sus" 
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3328.432524373156!2d35.49962401521455!3d33.89379168064426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151f170d01c41089%3A0x9920f8fba5d3b7e7!2sBeirut!5e0!3m2!1sen!2slb!4v1693165431845!5m2!1sen!2slb"
   style="border:0;" 
   height="370px"
   width="370px"
@@ -121,12 +115,12 @@
 </div>
 <div class="info">
   <h2>Opening Hours</h2>
-  <p>8am to 9pm</p>
+  <p></p>
 </div>
 <div class="info">
   <h2>Contact Us</h2>
-  <p>+961 70 967 861</p>
-  <p>ess.company11@gmail.com</p>
+  <p></p>
+  <p></p>
 </div>
 <div class="info">
   <div class="social-icons">
@@ -145,7 +139,7 @@
 </div>
 </div>
 <div class="footerdown">
-<p class="arr">© 2025 ESS, All rights reserved. Made by <b>Christopher Trad</b></p>
+<p class="arr">© 2025 Perfumes, All rights reserved. Made by <b>Christopher Trad</b></p>
 </div>
 </footer>   
 <style>@media (max-width: 768px) {

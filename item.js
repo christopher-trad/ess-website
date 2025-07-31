@@ -17,14 +17,4 @@ fetch("data.json")
     document.getElementById("main-image").src = item.image;
     document.getElementById("price").textContent = "price: " + item.price;
     document.getElementById("description").textContent = item.description || "No description.";
-
-    const specsList = document.getElementById("specs");
-    specsList.innerHTML = "";
-    if (item.specs) {
-      item.specs.forEach(spec => {
-        const li = document.createElement("li");
-        li.textContent = spec;
-        specsList.appendChild(li);
-      });
-    }
   });

@@ -11,7 +11,7 @@
     padding: 20px;
     text-decoration: none;
     font-size: 1.1rem;
-     color: #2ecc71;
+     color: #ffffff;
      transition: all 0.3s ease;
 }
 .navigationbar a::after {
@@ -25,8 +25,8 @@
 }
 
 .navigationbar a:hover {
-  color: #bfff00;
-  text-shadow: 0 0 8px #bfff00, 0 0 12px #bfff00;
+  color: #ffffff;
+  text-shadow: 0 0 8px #cdcdcd, 0 0 12px #cdcdcd;
   transform: scale(1.03);
 }
 
@@ -46,14 +46,14 @@ body {
   margin: 0;
   padding: 0;
   font-family:"Poppins", sans-serif;
-  background-color: #ffffff;
-  color: #2ecc71;
+  background-color: 	#f9f5f0;
+  color: #2b2b2b;
 }
 .navigationbar img{
     margin-left: 50px;
 }
 .navigationbar a:hover{
-    color: #186d3b;
+    color: #a9a9a9;
 }
 .swiper-button-prev,
 .swiper-button-next {
@@ -109,23 +109,35 @@ body {
 .swiper-button-next::after {
   display: none;
 }
-.title{
+.title {
     text-align: center;
-    background-color: white; /* white background for the h1 */
-    color: #28a937; /* green text inside h1 */
-    font-family: 'Arial Black', Gadget, sans-serif;
+    color: rgb(96, 64, 19); /* rich brown */
+    font-family: "Playfair Display", serif;
     font-size: 4rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* subtle shadow */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     letter-spacing: 2px;
     padding: 0.5rem 1rem;
     display: inline-block;
     border-radius: 8px;
+
+    /* ✨ Shimmer animation */
+    background: linear-gradient(90deg, rgb(96, 64, 19), #c8a97e, rgb(96, 64, 19));
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmer 3s linear infinite;
 }
+
+@keyframes shimmer {
+    0% { background-position: -200% center; }
+    100% { background-position: 200% center; }
+}
+
 header{
-    background-color: #004d40;
+    background-color: rgb(0, 0, 0);
 }
 footer{
-    background-color: #002b36;
+    background-color: #000000;
     margin: 0;
 }
 .arr{
@@ -139,8 +151,8 @@ footer{
   .title{
     font-size: 2rem;
   }
-  label{
-    display: hide;
+  .search-label{
+    display: none;
   }
   input{
     font-size: 0.7rem;
@@ -286,8 +298,8 @@ input{
 
 /* Keep the active page link glowing and underlined */
 .navigationbar a.active {
-  color: #bfff00;
-  text-shadow: 0 0 8px #bfff00, 0 0 10px #bfff00;
+  color: #f2f2f2;
+  text-shadow: 0 0 8px #ffffff, 0 0 10px #ffffff;
 }
 
 .navigationbar a.active::after {
@@ -332,7 +344,7 @@ input{
     0 0 15px 5px rgba(255, 255, 0, 0.8),
     inset 0 0 10px rgba(255, 255, 255, 0.6);
   transform: scale(1.1);
-  filter: brightness(1.3);
+  filter: brightness(1.1);
   z-index: 2;
 }
 
@@ -368,8 +380,8 @@ input{
 .card:hover {
   transform: scale(1.05);
   box-shadow:
-    0 8px 20px rgba(40, 167, 69, 0.4),
-    0 0 10px rgba(40, 167, 69, 0.3);
+    0 8px 20px rgba(255, 187, 0, 0.892),
+    0 0 10px gold;
 }
 
 /* Image style */
@@ -397,7 +409,7 @@ input{
 .card p {
   font-size: 18px;
   font-weight: 700;
-  color: #10471d;
+  color: #7e7e7e;
   margin: 0;
 }
 
@@ -524,20 +536,24 @@ input{
 
 /* COLORS AND BASE GLOW */
 .main-category-btn[data-category="electrical"] {
-  background-color: #2e8b57; /* green */
-  box-shadow: 0 0 5px #2e8b57;
+     background: url(images/summer-button.png);
+     background-size: cover;
+     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
 }
 .main-category-btn[data-category="solar products"] {
-  background-color: #fff200; /* dark yellow */
-  box-shadow: 0 0 5px #b8860b;
+     background: url(images/winter-button.png);
+     background-size: cover;
+     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
 }
 .main-category-btn[data-category="cctv/security system"] {
-  background-color: #1e90ff; /* blue */
-  box-shadow: 0 0 5px #1e90ff;
+     background: url(images/spring-button.png);
+     background-size: cover;
+     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
 }
 .main-category-btn[data-category="home appliances"] {
-  background-color: #303030; /* purple */
-  box-shadow: 0 0 5px #8a2be2;
+     background: url(images/autummn-button.png);
+     background-size: cover;
+     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
 }
 .main-category-btn[data-category="special offers"] {
   background-color: #ff4500; /* red */
@@ -572,15 +588,62 @@ input{
   background-color: #da0000; /* darker red */
   box-shadow: 0 0 16px #e60000;
 }
-@keyframes glowPulse {
+@keyframes glowPulse2 {
   0% { box-shadow: 0 0 10px #ff4d4d; }
   50% { box-shadow: 0 0 20px #ff1a1a; }
   100% { box-shadow: 0 0 10px #ff3434; }
 }
 
 .scroll-icon {
-  animation: glowPulse 2s ease-in-out;
+  animation: glowPulse2 2s ease-in-out;
 }
 html {
   scroll-behavior: smooth;
 }
+.search-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.search-label {
+  margin-top: 10px;
+  color: white;
+  font-weight: bold;
+  padding: 6px 16px;
+  background-color: black;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: inline-block;
+  border-radius: 16px;
+  letter-spacing: 1px;
+}
+
+.search-label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.4),
+    rgba(255, 255, 255, 0.1)
+  );
+  transform: skewX(-30deg);
+  animation: shine 2s infinite;
+  z-index: 0;
+}
+
+@keyframes shine {
+  0% {
+    left: -75%;
+  }
+  100% {
+    left: 125%;
+  }
+} 
