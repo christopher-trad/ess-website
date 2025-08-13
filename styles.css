@@ -296,7 +296,7 @@ input{
 
 /* Keep the active page link glowing and underlined */
 .navigationbar a.active {
-  color: #bfff00;
+  color: #afe900;
   text-shadow: 0 0 8px #bfff00, 0 0 10px #bfff00;
 }
 
